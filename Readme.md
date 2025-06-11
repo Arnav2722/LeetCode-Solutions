@@ -16,4 +16,5 @@ leetcode/
 ├── 852. Peak Index in a Mountain Array
 ├── 1009. Complement of Base 10 Integer
 ├── 1281. Subtract the Product and Sum of Digits of an Integer
+├── 3442. Maximum difference between even and odd frequency I
 ```
