@@ -24,8 +24,7 @@
     If the frequency is even,
     track the minimum among all such frequencies.
 
-        Step 3 : Return the Difference
-                 Once we have :
+        Step 3 : Return the Difference Once we have :
 
     maxOdd → the largest frequency among odd
         - frequency characters

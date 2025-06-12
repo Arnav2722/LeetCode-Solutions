@@ -1,7 +1,8 @@
 // 191. Number of 1 bits
+/* Given a positive integer n, write a function that returns the number of set bits in its binary representation(also known as the Hamming weight). */
 
 #include <bits/stdc++.h>
-using namespace std;
+                            using namespace std;
 class Solution
 {
 public:

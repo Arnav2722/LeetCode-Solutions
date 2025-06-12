@@ -1,5 +1,6 @@
 // 1281. SUBTRACT THE PRODUCT AND SUM OF DIGITS OF AN INTEGER
-
+/* Given an integer number n, return the difference between the product of its digits and the sum of its digits.
+ */
 #include <bits/stdc++.h>
 using namespace std;
 
