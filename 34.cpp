@@ -17,7 +17,7 @@ public:
                 ans = mid;
                 e = mid - 1; // Move left to find first occurrence
             }
-            else if (key > nums[mid])
+            else if (nums[mid] < key)
             {
                 s = mid + 1;
             }
