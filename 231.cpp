@@ -5,9 +5,9 @@
     if there exists an integer x such that n == 2x. */
 
 #include <bits/stdc++.h>
-        using namespace std;
+using namespace std;
 
-class Solution
+/* class Solution
 {
 public:
     bool isPowerOfTwo(int n)
@@ -23,3 +23,25 @@ public:
         return false;
     }
 };
+ */
+bool isPowerOfTwo(int n)
+{
+    for (int i = 0; i < 31; i++)
+    {
+        int ans = pow(2, i);
+        if (ans == n)
+        {
+            cout << endl;
+            return true;
+            cout << endl;
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << isPowerOfTwo(n) << endl;
+}
