@@ -6,9 +6,9 @@ For example,
 The integer 5 is "101" in binary and its complement is "010" which is the integer 2. Given an integer n, return its complement.
  */
 #include <bits/stdc++.h>
-    using namespace std;
+using namespace std;
 
-class Solution
+/* class Solution
 {
 public:
     int bitwiseComplement(int n)
@@ -27,4 +27,28 @@ public:
         int ans = (~n) & mask;
         return ans;
     }
-};
+}; */
+
+int bitwiseComplement(int n)
+{
+    int m = n;
+    int mask = 0;
+    if (n == 0)
+    {
+        return 1;
+    }
+    while (m != 0)
+    {
+        mask = (mask << 1) | 1;
+        m = m >> 1;
+    }
+    int ans = (~n) & mask;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    int result = bitwiseComplement(n);
+    cout << result;
+}

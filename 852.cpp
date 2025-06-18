@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
+/* class Solution
 {
 public:
     int peakIndexInMountainArray(vector<int> &arr)
@@ -33,3 +33,36 @@ public:
         return s;
     }
 };
+ */
+int peakIndexInMountainArray(vector<int> &arr)
+{
+    int s = 0;
+    int e = arr.size() - 1;
+
+    int mid = s + (e - s) / 2;
+
+    while (s < e)
+    {
+        if (arr[mid] < arr[mid + 1])
+        {
+            s = mid + 1;
+        }
+        else
+        {
+            e = mid;
+        }
+        mid = s + (e - s) / 2;
+    }
+    return s;
+}
+
+int main()
+{
+    vector<int> arr = {1, 3, 5, 6, 4, 2}; // Example input
+    int peakIndex = peakIndexInMountainArray(arr);
+
+    cout << "Peak Index: " << peakIndex << endl;
+    cout << "Peak Element: " << arr[peakIndex] << endl;
+
+    return 0;
+}
