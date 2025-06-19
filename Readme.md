@@ -9,6 +9,7 @@ The repository is structured as follows:q
 ```plaintext
 leetcode/
 ├── 7. Reverse Integer
+├── 33. Search in Rotated Sorted Array
 ├── 34. Find First and Last Position of Element in Sorted Array
 ├── 191. Number of 1 Bits
 ├── 231. Power of Two
